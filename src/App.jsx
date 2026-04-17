@@ -10,26 +10,36 @@ export default function App() {
     <>
       <main>
         <section>
-            <div id="header">
+            <div id="titulo">
     <div>
       <p>Fiel Bruno,</p>
       <h2>bem-vindo de volta!🦅</h2>
     </div>
-    <div id="menu">
-      <Menu size={25} color="#aaa" />
-    </div>
+    <div id="menu"><Menu/></div>
   </div>
 
-  <div id="search">
-    <Search size={18} color="#aaa" />
+  <div id="busca">
+    <Search/>
     <input type="text" placeholder="Buscar jogos, ídolos ou títulos..." />
   </div>
   
   <div id="cards">
-    <div className="card"><Folder size={32} color="#a78bfa" /><strong>8.1<span style={{fontSize:11, color:'#aaa'}}>GB</span></strong><p>Jogos</p></div>
-    <div className="card"><Folder size={32} color="#818cf8" /><strong>22.5<span style={{fontSize:11, color:'#aaa'}}>GB</span></strong><p>Melhores Gols</p></div>
-    <div className="card"><Folder size={32} color="#34d399" /><strong>10.2<span style={{fontSize:11, color:'#aaa'}}>GB</span></strong><p>Notícias</p></div>
-    <div className="card"><Folder size={32} color="#fb923c" /><strong>3.6<span style={{fontSize:11, color:'#aaa'}}>GB</span></strong><p>Curiosidades</p></div>
+    <div className="card1"><Folder/>
+    <strong>8.1 GB</strong>
+    <p>Jogos</p>
+    </div>
+    <div className="card2"><Folder/>
+    <strong>22.5 GB</strong>
+    <p>Melhores Gols</p>
+    </div>
+    <div className="card3"><Folder/>
+    <strong>10.2 GB</strong>
+    <p>Notícias</p>
+    </div>
+    <div className="card4"><Folder/>
+    <strong>3.6 GB</strong>
+    <p>Curiosidades</p>
+    </div>
   </div>
   <div id="socio">
   <img src={Logo}id='logo' alt="" />
@@ -39,15 +49,15 @@ export default function App() {
   </div>
   <span>›</span>
 </div>
-<div id="recent">
+<div id="memo">
   <h3>Memórias do Timão</h3>
-  <div id="recent-cards">
-    <div className="recent-card" style={{background: '#ede9fe'}}>
+  <div id="cards1">
+    <div className="cards2">
       <strong>Libertadores 2012</strong>
       <p>118 items</p>
       <span>+</span>
     </div>
-    <div className="recent-card" style={{background: '#dcfce7'}}>
+    <div className="cards3">
       <strong>Gols do Ronaldo</strong>
       <p>255 items</p>
       <span>+</span>
@@ -60,7 +70,7 @@ export default function App() {
     <div className="rs"><Compass className='icone'/></div>
     <div className="rs"><FolderClosed className='icone'/></div>
     <div className="rs"><User className='icone'/></div>
-    <div id="add"><Plus size={22} color="#fff" /></div>
+    <div id="add"><Plus/></div>
 
   </div>
         </footer>
