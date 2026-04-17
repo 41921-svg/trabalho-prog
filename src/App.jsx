@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import logoGta from './assets/logo-gta.svg'
+import Logo from './assets/cor-logo.png'
 import { Compass, User, Settings, Menu, Search, Folder, Star, Plus, FolderClosed, Trophy,  } from 'lucide-react';
 
 
@@ -31,8 +31,8 @@ export default function App() {
     <div className="card"><Folder size={32} color="#34d399" /><strong>10.2<span style={{fontSize:11, color:'#aaa'}}>GB</span></strong><p>Notícias</p></div>
     <div className="card"><Folder size={32} color="#fb923c" /><strong>3.6<span style={{fontSize:11, color:'#aaa'}}>GB</span></strong><p>Curiosidades</p></div>
   </div>
-  <div id="premium">
-  <Trophy size={32} color="#a78bfa" />
+  <div id="socio">
+  <img src={Logo}id='logo' alt="" />
   <div>
     <strong>Seja Sócio Fiel Torcedor</strong>
     <p>Acesse Conteúdo Exclusivo do Timão</p>
@@ -60,7 +60,7 @@ export default function App() {
     <div className="rs"><Compass className='icone'/></div>
     <div className="rs"><FolderClosed className='icone'/></div>
     <div className="rs"><User className='icone'/></div>
-    <div id="fab"><Plus size={22} color="#fff" /></div>
+    <div id="add"><Plus size={22} color="#fff" /></div>
 
   </div>
         </footer>
